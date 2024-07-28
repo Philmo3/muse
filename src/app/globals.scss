@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply m-0 p-0
+}
+
+h1 { @apply text-6xl tablet:text-7xl desktop:text-9xl}
+h2 { font-size: 3.5em; }
+h3 { font-size: 2.17em; }
+h5 { font-size: 1.83em; }
+h6 { font-size: 1.75em; }
+h1, h2, h3, h4,
+h5, h6 { font-weight: bolder }
