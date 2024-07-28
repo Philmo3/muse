@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.scss";
 import localFont from 'next/font/local'
+import {PT_Sans} from 'next/font/google'
 
 export const metadata: Metadata = {
   title: "Les Muses Maitres Coiffeurs",
@@ -23,6 +24,13 @@ const theSeason = localFont({
   variable: '--season',
 })
 
+const ptSans = PT_Sans({
+  weight: '400',
+  style: 'normal',
+  subsets: ['latin'],
+  variable: '--PT'
+})
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -30,7 +38,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body className={theSeason.variable}>{children}</body>
+      <body className={theSeason.variable + ' ' + ptSans.variable}>{children}</body>
     </html>
   );
 }

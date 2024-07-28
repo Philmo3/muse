@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         season: ["var(--season)"],
+        pt: ["var(--PT)"],
       },
     },
     colors: {

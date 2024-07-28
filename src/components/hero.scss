@@ -1,21 +1,50 @@
 .hero {
-  @apply h-[50dvh] flex gap-20 items-center p-4 desktop:h-dvh w-full desktop:p-16;
+  @apply h-dvh flex flex-col gap-4 items-center p-4 w-full justify-center tablet:h-[66dvh] desktop:h-dvh desktop:p-16 desktop:pl-40;
   @apply bg-gradient-to-tr from-75% from-dark to-gold;
+  animation: gradientPosition 2s forwards;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 200% 200%;
+  background-position: 0% 0%;
 }
 
+h1 {
+  align-self: flex-start;
+}
 
 .hero h1 span span {
   position: relative;
-  bottom: -1em;
+  bottom: 1em;
   opacity: 0;
   transition: all;
   animation: letters 0.75s forwards;
+}
+
+h3 {
+  opacity: 0;
+  position: relative;
+  align-self: flex-start;
+  left: -1em;
+  animation: leftTitle 0.75s forwards;
+  animation-delay: 1.35s;
 }
 
 @keyframes letters {
   to {
     bottom: 0;
     opacity: 1;
+  }
+}
+
+@keyframes leftTitle {
+  to{
+    opacity: 1;
+    left: 0;
+  }
+}
+
+@keyframes gradientPosition {
+  to {
+    background-position: 100% 0%;
   }
 }

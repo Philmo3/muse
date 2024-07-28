@@ -1,9 +1,10 @@
+import { Cta } from './cta';
 import './hero.scss'
 
 export const Hero = () => {
   return (
     <div className="hero hero-bg-animated tablet:px-4 tablet:pt-4">
-      <h1 className="text-white max-w-[1000px] font-season font-bold text-">
+      <h1 className="text-white max-w-[1200px] font-season font-bold">
         <span>
           <span>L</span>
           <span style={{animationDelay: '0.05s'}}>E</span>
@@ -34,6 +35,10 @@ export const Hero = () => {
           <span style={{animationDelay: '1.3s'}}>S</span>
         </span>
       </h1>
+      <h3 className='text-white font-pt'>Lorem ipsum odor amet, consectetuer adipiscing elit.</h3>
+      <div className='self-start mt-4'>
+        <Cta /> 
+      </div>
     </div>
   );
 };
