@@ -31,6 +31,7 @@ const ptSans = PT_Sans({
   variable: '--PT'
 })
 
+
 export default function RootLayout({
   children,
 }: Readonly<{

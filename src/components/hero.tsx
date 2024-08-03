@@ -35,7 +35,7 @@ export const Hero = () => {
           <span style={{animationDelay: '1.3s'}}>S</span>
         </span>
       </h1>
-      <h3 className='text-white font-pt'>Lorem ipsum odor amet, consectetuer adipiscing elit.</h3>
+      <h3 className='slogan text-white font-pt'>Lorem ipsum odor amet, consectetuer adipiscing elit.</h3>
       <div className='self-start mt-4'>
         <Cta /> 
       </div>
